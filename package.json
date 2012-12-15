@@ -1,0 +1,11 @@
+{
+  "name": "Clean CSS App",
+  "main": "index.html",
+  "preferGlobal": "true",
+  "version": "1.0.0",
+  "author": "James Doyle <james2doyle@gmail.com>",
+  "description": "description",
+  "dependencies" : {
+    "clean-css"   :  "*"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Clean CSS",
+  "description": "CSS Minifier App, built with CleanCSS and PrismJs.",
+  "version": "1.0.0",
+  "minimum_chrome_version": "23",
+  "permissions": ["clipboardWrite"],
+  "icons": {
+    "16": "img/Icon-16.png",
+    "128": "img/Icon-128.png",
+    "256": "img/Icon-256.png",
+    "512": "img/Icon-512.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["js/main.js"]
+    }
+  },
+  "offline_enabled": true
+}

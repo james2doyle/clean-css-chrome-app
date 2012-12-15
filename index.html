@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clean CSS App</title>
+  <link rel="stylesheet" type="text/css" href="css/prism-okaidia.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="modal">Text Copied</div>
+  <div class="container">
+    <h2>Clean CSS</h2>
+    <div id="input-wrap">
+      <label for="input">Input:</label>
+      <pre id="input" spellcheck="false">/* paste some css */</pre>
+    </div>
+    <div id="output-wrap">
+      <label for="output">Output:</label>
+      <pre>
+        <code class="language-css" id="output" >/* see your results */</code>
+      </pre>
+      <button id="copyBtn" class="off">Copy To Clipboard</button>
+    </div>
+  </div>
+  <small><a href="http://ohdoylerules.com/" target="_blank">Created by James Doyle</a></small>
+  <script src="js/bundle.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

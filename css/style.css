@@ -1,0 +1,134 @@
+body {
+  text-shadow: 0 1px 0 #000;
+  background: #272822;
+  color: white;
+}
+.container {
+  width: 580px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 0;
+  -webkit-transition: all 0.2s ease;
+}
+
+nav:hover #close-button {
+  opacity: 1;
+}
+
+#close-button {
+  float: right;
+  font-weight: bold;
+  opacity: 0.2;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#input-wrap,
+#output-wrap {
+  float: left;
+  clear:both;
+}
+
+pre[class*="language-"],
+#input {
+  padding: 0;
+  margin: 10px 0 10px 5px;
+  padding: 10px;
+  width: 550px;
+  height: 150px;
+  font-size: 12px;
+  overflow-y: scroll;
+  white-space: pre-line;
+  word-wrap: break-word;
+  font-family: 'Open Sans', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+  -webkit-transition: box-shadow 0.6s ease;
+}
+
+code[class*="language-"] {
+  font-family: 'Open Sans', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+}
+
+#output:focus,
+#input:focus {
+  outline: none;
+}
+
+#input {
+  direction: ltr;
+  white-space: pre-wrap;
+  color: #aaa;
+  text-shadow: 0 1px 0 #000;
+  -webkit-user-select: initial;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+#output {
+  width: auto;
+  margin: 10px 0 15px;
+}
+
+#modal {
+  position: fixed;
+  top: -40px;
+  left: 50%;
+  z-index: 2;
+  margin-left: -100px;
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  padding: 20px 0 0 0;
+  text-shadow: none;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
+  0 2px 5px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  background: #5aa9e4;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550), opacity 0.2s ease;
+  -webkit-transform: translate3d(0,0,0);
+  opacity: 0;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #444;
+  color: white;
+  padding: 4px 10px 5px;
+  text-shadow: 0 1px 0 black;
+  opacity: 1;
+  -webkit-transition: box-shadow 0.6s ease, opacity 0.6s ease;
+}
+
+button.off {
+  opacity: 0;
+}
+
+button:hover {
+  box-shadow: 0 1px 5px black;
+}
+
+button:focus {
+  outline: none;
+}
+
+.lights-off .container {
+  -webkit-transform: scale(0.8);
+  -webkit-filter: blur(3px) grayscale(100%);
+}
+.lights-off #modal {
+  opacity: 1;
+  -webkit-transform: translate3d(0,160%,0);
+}
+
+small a {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: #444;
+  text-decoration: none;
+  -webkit-transition: color 0.4s ease;
+}
+
+small a:hover {
+  color: #fff;
+}
