@@ -1,5 +1,5 @@
 {
-  "name": "Clean CSS App",
+  "name": "clean-css-chrome-app",
   "main": "index.html",
   "preferGlobal": "true",
   "version": "1.0.0",
