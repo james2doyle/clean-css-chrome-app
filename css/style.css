@@ -1,4 +1,5 @@
 body {
+  font-family: "Open Sans", "Helevetica Neue", Helevetica, Arial, sans-serif;
   text-shadow: 0 1px 0 #000;
   background: #272822;
   color: white;
@@ -8,7 +9,8 @@ body {
   display: inline-block;
   margin: 0 auto;
   padding: 10px 0;
-  -webkit-transition: all 0.2s ease;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transition: -webkit-transform 0.2s ease;
 }
 
 nav:hover #close-button {

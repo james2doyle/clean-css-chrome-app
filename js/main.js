@@ -9,6 +9,7 @@
     width: 600,
     height: 600,
     minWidth: 600,
-    minHeight: 600
+    minHeight: 600,
+    top: 0
   });
 });

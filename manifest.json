@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Clean CSS",
   "description": "CSS Minifier App, built with CleanCSS and PrismJs.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minimum_chrome_version": "23",
   "permissions": ["clipboardWrite"],
   "icons": {
