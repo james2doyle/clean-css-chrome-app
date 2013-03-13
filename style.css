@@ -25,3 +25,9 @@ body {
 .span12 {
   text-align: center;
 }
+
+.social-buttons {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
