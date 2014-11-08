@@ -2,7 +2,7 @@
   "name": "clean-css-chrome-app",
   "main": "index.html",
   "preferGlobal": "true",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "James Doyle <james2doyle@gmail.com>",
   "description": "description",
   "dependencies" : {

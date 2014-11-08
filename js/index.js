@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
       copyBtn.removeAttribute('disabled');
       copyBtn.classList.remove('off');
     } else {
-      copyBtn.setAttribute('disabled');
+      copyBtn.setAttribute('disabled', 'disabled');
       copyBtn.classList.add('off');
     }
   };
