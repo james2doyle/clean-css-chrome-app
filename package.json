@@ -2,8 +2,11 @@
   "name": "clean-css-chrome-app",
   "main": "index.html",
   "preferGlobal": "true",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "James Doyle <james2doyle@gmail.com>",
+  "scripts": {
+    "build": "browserify -r clean-css -o js/bundle.js"
+  },
   "description": "description",
   "dependencies" : {
     "clean-css"   :  "*"
