@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(e) {
+  document.body.classList.remove('lights-off');
   var input = document.getElementById('input');
   var output = document.getElementById('output');
   var copyBtn = document.getElementById('copyBtn');
@@ -6,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
   input.focus();
   input.onkeyup = function() {
     var source = input.innerHTML;
-    var minimized = cleanCSS.process(source);
+    var minimized = new cleanCSS().minify(source);
     output.innerHTML = minimized;
     minimized = null;
     Prism.highlightAll(true, null);
@@ -30,6 +31,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
     document.body.classList.add('lights-off');
     setTimeout(function(){
       document.body.classList.remove('lights-off');
-    },1000);
+    }, 1000);
   };
 });
