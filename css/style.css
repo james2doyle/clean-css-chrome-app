@@ -9,8 +9,10 @@ body {
   display: inline-block;
   margin: 0 auto;
   padding: 10px 0;
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.2s ease;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  -webkit-filter: blur(0) grayscale(0);
+  -webkit-transition: all 0.2s ease;
 }
 
 nav:hover #close-button {
@@ -86,9 +88,10 @@ code[class*="language-"] {
   0 2px 5px rgba(0,0,0,0.5);
   text-shadow: 0 1px 0 rgba(0,0,0,0.5);
   background: #5aa9e4;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550), opacity 0.2s ease;
   -webkit-transform: translate3d(0,0,0);
-  opacity: 0;
 }
 
 button {
